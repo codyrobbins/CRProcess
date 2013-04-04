@@ -1,6 +1,14 @@
 #import <sys/sysctl.h>
 #import "CRProcess.h"
 
+@interface CRProcess ()
+
++ (CRProcess *)processWithId:(NSNumber *)id;
+- (CRProcess *)initWithId:(NSNumber *)id;
+- (void)getProcessInfo;
+
+@end
+
 @implementation CRProcess
 
 + (NSArray *)processes
