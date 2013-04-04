@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C3114FA3170E202D005A4AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114FA2170E202D005A4AFB /* Cocoa.framework */; };
-		C3114FAD170E202D005A4AFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3114FAB170E202D005A4AFB /* InfoPlist.strings */; };
 		C3114FB1170E202D005A4AFB /* CRProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = C3114FB0170E202D005A4AFB /* CRProcess.m */; };
 		C3114FB9170E202D005A4AFB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114FB8170E202D005A4AFB /* SenTestingKit.framework */; };
 		C3114FBA170E202D005A4AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114FA2170E202D005A4AFB /* Cocoa.framework */; };
 		C3114FBD170E202D005A4AFB /* CRProcess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114F9F170E202D005A4AFB /* CRProcess.framework */; };
-		C3114FC3170E202D005A4AFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3114FC1170E202D005A4AFB /* InfoPlist.strings */; };
 		C3114FC6170E202D005A4AFB /* CRProcessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3114FC5170E202D005A4AFB /* CRProcessTests.m */; };
 /* End PBXBuildFile section */
 
@@ -33,15 +31,13 @@
 		C3114FA5170E202D005A4AFB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C3114FA6170E202D005A4AFB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C3114FA7170E202D005A4AFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C3114FAA170E202D005A4AFB /* CRProcess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRProcess-Info.plist"; sourceTree = "<group>"; };
-		C3114FAC170E202D005A4AFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C3114FAE170E202D005A4AFB /* CRProcess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CRProcess-Prefix.pch"; sourceTree = "<group>"; };
+		C3114FAA170E202D005A4AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../CRProcess/Info.plist; sourceTree = "<group>"; };
+		C3114FAE170E202D005A4AFB /* headers.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headers.pch; sourceTree = "<group>"; };
 		C3114FAF170E202D005A4AFB /* CRProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRProcess.h; sourceTree = "<group>"; };
 		C3114FB0170E202D005A4AFB /* CRProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRProcess.m; sourceTree = "<group>"; };
 		C3114FB7170E202D005A4AFB /* CRProcessTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRProcessTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3114FB8170E202D005A4AFB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C3114FC0170E202D005A4AFB /* CRProcessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRProcessTests-Info.plist"; sourceTree = "<group>"; };
-		C3114FC2170E202D005A4AFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3114FC0170E202D005A4AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3114FC4170E202D005A4AFB /* CRProcessTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRProcessTests.h; sourceTree = "<group>"; };
 		C3114FC5170E202D005A4AFB /* CRProcessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRProcessTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +67,10 @@
 		C3114F95170E202D005A4AFB = {
 			isa = PBXGroup;
 			children = (
-				C3114FA8170E202D005A4AFB /* CRProcess */,
-				C3114FBE170E202D005A4AFB /* CRProcessTests */,
+				C3114FA8170E202D005A4AFB /* Classes */,
+				C3114FA9170E202D005A4AFB /* Other Sources */,
+				C3114FCF170E2354005A4AFB /* Resources */,
+				C3114FBE170E202D005A4AFB /* Tests */,
 				C3114FA1170E202D005A4AFB /* Frameworks */,
 				C3114FA0170E202D005A4AFB /* Products */,
 			);
@@ -107,43 +105,51 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		C3114FA8170E202D005A4AFB /* CRProcess */ = {
+		C3114FA8170E202D005A4AFB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				C3114FAF170E202D005A4AFB /* CRProcess.h */,
 				C3114FB0170E202D005A4AFB /* CRProcess.m */,
-				C3114FA9170E202D005A4AFB /* Supporting Files */,
 			);
+			name = Classes;
 			path = CRProcess;
 			sourceTree = "<group>";
 		};
-		C3114FA9170E202D005A4AFB /* Supporting Files */ = {
+		C3114FA9170E202D005A4AFB /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C3114FAA170E202D005A4AFB /* CRProcess-Info.plist */,
-				C3114FAB170E202D005A4AFB /* InfoPlist.strings */,
-				C3114FAE170E202D005A4AFB /* CRProcess-Prefix.pch */,
+				C3114FAE170E202D005A4AFB /* headers.pch */,
 			);
-			name = "Supporting Files";
+			name = "Other Sources";
+			path = CRProcess;
 			sourceTree = "<group>";
 		};
-		C3114FBE170E202D005A4AFB /* CRProcessTests */ = {
+		C3114FBE170E202D005A4AFB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				C3114FC4170E202D005A4AFB /* CRProcessTests.h */,
 				C3114FC5170E202D005A4AFB /* CRProcessTests.m */,
 				C3114FBF170E202D005A4AFB /* Supporting Files */,
 			);
+			name = Tests;
 			path = CRProcessTests;
 			sourceTree = "<group>";
 		};
 		C3114FBF170E202D005A4AFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C3114FC0170E202D005A4AFB /* CRProcessTests-Info.plist */,
-				C3114FC1170E202D005A4AFB /* InfoPlist.strings */,
+				C3114FC0170E202D005A4AFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3114FCF170E2354005A4AFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3114FAA170E202D005A4AFB /* Info.plist */,
+			);
+			name = Resources;
+			path = CRProcessTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3114FAD170E202D005A4AFB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3114FC3170E202D005A4AFB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,25 +288,6 @@
 			targetProxy = C3114FBB170E202D005A4AFB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C3114FAB170E202D005A4AFB /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3114FAC170E202D005A4AFB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C3114FC1170E202D005A4AFB /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3114FC2170E202D005A4AFB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C3114FC7170E202D005A4AFB /* Debug */ = {
@@ -372,8 +357,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
-				INFOPLIST_FILE = "CRProcess/CRProcess-Info.plist";
+				GCC_PREFIX_HEADER = CRProcess/headers.pch;
+				INFOPLIST_FILE = CRProcess/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -387,8 +372,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
-				INFOPLIST_FILE = "CRProcess/CRProcess-Info.plist";
+				GCC_PREFIX_HEADER = CRProcess/headers.pch;
+				INFOPLIST_FILE = CRProcess/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -400,8 +385,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
-				INFOPLIST_FILE = "CRProcessTests/CRProcessTests-Info.plist";
+				GCC_PREFIX_HEADER = CRProcess/headers.pch;
+				INFOPLIST_FILE = CRProcessTests/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -413,8 +398,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
-				INFOPLIST_FILE = "CRProcessTests/CRProcessTests-Info.plist";
+				GCC_PREFIX_HEADER = CRProcess/headers.pch;
+				INFOPLIST_FILE = CRProcessTests/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
