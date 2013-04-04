@@ -13,6 +13,7 @@
 		C3114FBA170E202D005A4AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114FA2170E202D005A4AFB /* Cocoa.framework */; };
 		C3114FBD170E202D005A4AFB /* CRProcess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114F9F170E202D005A4AFB /* CRProcess.framework */; };
 		C3114FC6170E202D005A4AFB /* CRProcessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3114FC5170E202D005A4AFB /* CRProcessTests.m */; };
+		C3114FD2170E25BF005A4AFB /* CRProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = C3114FAF170E202D005A4AFB /* CRProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3114FD2170E25BF005A4AFB /* CRProcess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
