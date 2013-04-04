@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3114FA3170E202D005A4AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114FA2170E202D005A4AFB /* Cocoa.framework */; };
+		C3114FAD170E202D005A4AFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3114FAB170E202D005A4AFB /* InfoPlist.strings */; };
+		C3114FB1170E202D005A4AFB /* CRProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = C3114FB0170E202D005A4AFB /* CRProcess.m */; };
+		C3114FB9170E202D005A4AFB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114FB8170E202D005A4AFB /* SenTestingKit.framework */; };
+		C3114FBA170E202D005A4AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114FA2170E202D005A4AFB /* Cocoa.framework */; };
+		C3114FBD170E202D005A4AFB /* CRProcess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3114F9F170E202D005A4AFB /* CRProcess.framework */; };
+		C3114FC3170E202D005A4AFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3114FC1170E202D005A4AFB /* InfoPlist.strings */; };
+		C3114FC6170E202D005A4AFB /* CRProcessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3114FC5170E202D005A4AFB /* CRProcessTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3114FBB170E202D005A4AFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3114F96170E202D005A4AFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3114F9E170E202D005A4AFB;
+			remoteInfo = CRProcess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3114F9F170E202D005A4AFB /* CRProcess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRProcess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3114FA2170E202D005A4AFB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C3114FA5170E202D005A4AFB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C3114FA6170E202D005A4AFB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C3114FA7170E202D005A4AFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3114FAA170E202D005A4AFB /* CRProcess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRProcess-Info.plist"; sourceTree = "<group>"; };
+		C3114FAC170E202D005A4AFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3114FAE170E202D005A4AFB /* CRProcess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CRProcess-Prefix.pch"; sourceTree = "<group>"; };
+		C3114FAF170E202D005A4AFB /* CRProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRProcess.h; sourceTree = "<group>"; };
+		C3114FB0170E202D005A4AFB /* CRProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRProcess.m; sourceTree = "<group>"; };
+		C3114FB7170E202D005A4AFB /* CRProcessTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRProcessTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3114FB8170E202D005A4AFB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3114FC0170E202D005A4AFB /* CRProcessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRProcessTests-Info.plist"; sourceTree = "<group>"; };
+		C3114FC2170E202D005A4AFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3114FC4170E202D005A4AFB /* CRProcessTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRProcessTests.h; sourceTree = "<group>"; };
+		C3114FC5170E202D005A4AFB /* CRProcessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRProcessTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3114F9B170E202D005A4AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3114FA3170E202D005A4AFB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3114FB3170E202D005A4AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3114FB9170E202D005A4AFB /* SenTestingKit.framework in Frameworks */,
+				C3114FBA170E202D005A4AFB /* Cocoa.framework in Frameworks */,
+				C3114FBD170E202D005A4AFB /* CRProcess.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3114F95170E202D005A4AFB = {
+			isa = PBXGroup;
+			children = (
+				C3114FA8170E202D005A4AFB /* CRProcess */,
+				C3114FBE170E202D005A4AFB /* CRProcessTests */,
+				C3114FA1170E202D005A4AFB /* Frameworks */,
+				C3114FA0170E202D005A4AFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3114FA0170E202D005A4AFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3114F9F170E202D005A4AFB /* CRProcess.framework */,
+				C3114FB7170E202D005A4AFB /* CRProcessTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3114FA1170E202D005A4AFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3114FA2170E202D005A4AFB /* Cocoa.framework */,
+				C3114FB8170E202D005A4AFB /* SenTestingKit.framework */,
+				C3114FA4170E202D005A4AFB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3114FA4170E202D005A4AFB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3114FA5170E202D005A4AFB /* AppKit.framework */,
+				C3114FA6170E202D005A4AFB /* CoreData.framework */,
+				C3114FA7170E202D005A4AFB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C3114FA8170E202D005A4AFB /* CRProcess */ = {
+			isa = PBXGroup;
+			children = (
+				C3114FAF170E202D005A4AFB /* CRProcess.h */,
+				C3114FB0170E202D005A4AFB /* CRProcess.m */,
+				C3114FA9170E202D005A4AFB /* Supporting Files */,
+			);
+			path = CRProcess;
+			sourceTree = "<group>";
+		};
+		C3114FA9170E202D005A4AFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3114FAA170E202D005A4AFB /* CRProcess-Info.plist */,
+				C3114FAB170E202D005A4AFB /* InfoPlist.strings */,
+				C3114FAE170E202D005A4AFB /* CRProcess-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3114FBE170E202D005A4AFB /* CRProcessTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3114FC4170E202D005A4AFB /* CRProcessTests.h */,
+				C3114FC5170E202D005A4AFB /* CRProcessTests.m */,
+				C3114FBF170E202D005A4AFB /* Supporting Files */,
+			);
+			path = CRProcessTests;
+			sourceTree = "<group>";
+		};
+		C3114FBF170E202D005A4AFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3114FC0170E202D005A4AFB /* CRProcessTests-Info.plist */,
+				C3114FC1170E202D005A4AFB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C3114F9C170E202D005A4AFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C3114F9E170E202D005A4AFB /* CRProcess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3114FC9170E202D005A4AFB /* Build configuration list for PBXNativeTarget "CRProcess" */;
+			buildPhases = (
+				C3114F9A170E202D005A4AFB /* Sources */,
+				C3114F9B170E202D005A4AFB /* Frameworks */,
+				C3114F9C170E202D005A4AFB /* Headers */,
+				C3114F9D170E202D005A4AFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRProcess;
+			productName = CRProcess;
+			productReference = C3114F9F170E202D005A4AFB /* CRProcess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3114FB6170E202D005A4AFB /* CRProcessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3114FCC170E202D005A4AFB /* Build configuration list for PBXNativeTarget "CRProcessTests" */;
+			buildPhases = (
+				C3114FB2170E202D005A4AFB /* Sources */,
+				C3114FB3170E202D005A4AFB /* Frameworks */,
+				C3114FB4170E202D005A4AFB /* Resources */,
+				C3114FB5170E202D005A4AFB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3114FBC170E202D005A4AFB /* PBXTargetDependency */,
+			);
+			name = CRProcessTests;
+			productName = CRProcessTests;
+			productReference = C3114FB7170E202D005A4AFB /* CRProcessTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3114F96170E202D005A4AFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Cody Robbins";
+			};
+			buildConfigurationList = C3114F99170E202D005A4AFB /* Build configuration list for PBXProject "CRProcess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3114F95170E202D005A4AFB;
+			productRefGroup = C3114FA0170E202D005A4AFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3114F9E170E202D005A4AFB /* CRProcess */,
+				C3114FB6170E202D005A4AFB /* CRProcessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3114F9D170E202D005A4AFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3114FAD170E202D005A4AFB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3114FB4170E202D005A4AFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3114FC3170E202D005A4AFB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3114FB5170E202D005A4AFB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3114F9A170E202D005A4AFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3114FB1170E202D005A4AFB /* CRProcess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3114FB2170E202D005A4AFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3114FC6170E202D005A4AFB /* CRProcessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3114FBC170E202D005A4AFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3114F9E170E202D005A4AFB /* CRProcess */;
+			targetProxy = C3114FBB170E202D005A4AFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3114FAB170E202D005A4AFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3114FAC170E202D005A4AFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3114FC1170E202D005A4AFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3114FC2170E202D005A4AFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3114FC7170E202D005A4AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C3114FC8170E202D005A4AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3114FCA170E202D005A4AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
+				INFOPLIST_FILE = "CRProcess/CRProcess-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C3114FCB170E202D005A4AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
+				INFOPLIST_FILE = "CRProcess/CRProcess-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		C3114FCD170E202D005A4AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
+				INFOPLIST_FILE = "CRProcessTests/CRProcessTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C3114FCE170E202D005A4AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CRProcess/CRProcess-Prefix.pch";
+				INFOPLIST_FILE = "CRProcessTests/CRProcessTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3114F99170E202D005A4AFB /* Build configuration list for PBXProject "CRProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3114FC7170E202D005A4AFB /* Debug */,
+				C3114FC8170E202D005A4AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3114FC9170E202D005A4AFB /* Build configuration list for PBXNativeTarget "CRProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3114FCA170E202D005A4AFB /* Debug */,
+				C3114FCB170E202D005A4AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3114FCC170E202D005A4AFB /* Build configuration list for PBXNativeTarget "CRProcessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3114FCD170E202D005A4AFB /* Debug */,
+				C3114FCE170E202D005A4AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3114F96170E202D005A4AFB /* Project object */;
+}
